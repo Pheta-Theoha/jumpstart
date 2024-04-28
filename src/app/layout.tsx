@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Metadata } from "next";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { NavBar } from "./components/NavBar";
+// import { Render } from "./components/Render";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <header className="sticky top-0 bg-gradient-to-b from-slate-900 via-slate-700 to-blue-300">
+          <NavBar />
+        </header>
+        <main className="bg-slate-300 text-black">
+        {children}
+        </main>
+        <footer className="px-5 bg-gradient-to-t from-slate-800 to-transparent columns-3 py-10">
+          <div className="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eos. 
+            Vero inventore cupiditate magni, perferendis similique ab eligendi illum nulla, culpa voluptatum 
+            quaerat ex odio voluptatem fugiat illo molestiae ut!
+          </div>
+          <div className="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eos. Vero inventore cupiditate magni, 
+            perferendis similique ab eligendi illum nulla, culpa voluptatum quaerat ex odio voluptatem fugiat illo molestiae ut!
+          </div>
+          <div className="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eos. Vero inventore cupiditate magni, 
+            perferendis similique ab eligendi illum nulla, culpa voluptatum quaerat ex odio voluptatem fugiat illo molestiae ut!
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

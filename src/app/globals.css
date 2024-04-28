@@ -2,7 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.header {
+  background-image: url('../../public/header.jpg');
+  height: 500px;
+  color: rgb(10, 10, 10, 10)
+}
+
+.about-header {
+  background-image: url('../../public/about.webp');
+  height: 400px;
+  color: rgb(10, 10, 10, 10)
+}
+
+.services-header {
+  background-image: url('../../public/services_header.jpg');
+  height: 400px;
+  color: rgb(10, 10, 10, 10)
+}
+
+.team-header {
+  background-image: url('../../public/about.webp');
+  height: 400px;
+  color: rgb(10, 10, 10, 10)
+}
+
+.contact-header {
+  background-image: url('../../public/contact_header.webp');
+  height: 500px;
+  color: rgb(10, 10, 10, 10)
+}
+
+.products-header {
+  background-image: url('../../public/products_header.jpeg');
+  height: 500px;
+  color: rgb(10, 10, 10, 10)
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +65,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

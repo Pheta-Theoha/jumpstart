@@ -1,12 +1,11 @@
 import Image from "next/image";
 // import image1 from "../../public/image1.jpg"
 
-export default function Home() {
+export default function About() {
   return (
     <main>
-      <div className="header text-white text-shadow-lg outline-4">
-        <h1 className="drop-shadow-[0_3px_3px_rgba(10,10,10,10)] text-3xl pt-20 pl-10">YOUR COMPUTER SOLUTIONS PROVIDER</h1>
-        <h1 className="drop-shadow-[0_2px_2px_rgba(10,10,10,10)] text-5xl pt-20 pl-28">You mention it.<br/> We digitize it</h1>
+      <div className="about-header text-white text-shadow-lg outline-4">
+        <h1 className="drop-shadow-[0_3px_3px_rgba(10,10,10,10)] text-6xl pt-40 pl-32">About Us</h1>
       </div>
       <div className="columns-2 pt-10 pb-15 pr-5 pl-10 text-justify">
         <div>
