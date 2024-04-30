@@ -6,7 +6,7 @@ export const NavBar = () => {
             <div>
                 <Link href="/">
                     <span className="text-5xl font-serif mr-10 bg-gradient-to-l from-slate-700 via-white to-slate-700 text-transparent bg-clip-text">JumpStart</span><br/>
-                    <span className="text-2xl pl-14 font-mono text-green-400">&lt;Systems&gt;</span>
+                    <span className="text-2xl pl-14 font-mono text-green-400">&lt;/Systems&gt;</span>
                 </Link>
             </div>
             <div className="text-2xl pt-5 pl-12">

@@ -8,8 +8,8 @@ export default function Home() {
         <h1 className="drop-shadow-[0_3px_3px_rgba(10,10,10,10)] text-3xl pt-20 pl-10">YOUR COMPUTER SOLUTIONS PROVIDER</h1>
         <h1 className="drop-shadow-[0_2px_2px_rgba(10,10,10,10)] text-5xl pt-20 pl-28">You mention it.<br/> We digitize it</h1>
       </div>
-      <div className="columns-2 pt-10 pb-15 pr-5 pl-10 text-justify">
-        <div>
+      <div className=" pt-10 pb-15 pr-5 ml-10 text-justify">
+        <div className="columns-2">
           <div className="pt-5 pb-10">
             <p className="text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic veritatis debitis quas incidunt fugiat nobis 
@@ -23,13 +23,16 @@ export default function Home() {
               facilis commodi officiis voluptatem consectetur sunt, eum atque nam porro amet fuga itaque ipsum pariatur illum?
             </p>
           </div>
-          <div className="pl-5 pb-5 rounded-md">
-            <Image src="/image1.jpg" width={600} height={600} alt="Picture 1" />
-          </div>
-        </div>
-        <div>
           <div className="pl-5 py-7 rounded-md">
             <Image src="/image2.jpg" width={600} height={600} alt="Picture 1" />
+          </div>
+        </div>
+        <div className="bg-gradient-to-l from-transparent to-slate-700 rounded-md">
+          <h1 className="text-white text-center text-5xl p-5 text-mono">From Local Area Networks...</h1>
+        </div>
+        <div className="columns-2 m-5">
+          <div className="pb-5 rounded-md">
+            <Image src="/image1.jpg" width={600} height={600} alt="Picture 1" />
           </div>
           <div>
             <p className="text-lg pt-8">
@@ -41,6 +44,9 @@ export default function Home() {
               deserunt expedita quasi dolores labore repellat perspiciatis. Illum officia nulla velit magnam natus aut vero quasi provident.
             </p>
           </div>
+        </div>
+        <div className="bg-gradient-to-r from-transparent to-slate-700 rounded-md">
+          <h1 className="text-white text-center text-5xl p-5">...to Metropolitan Area Networks and more</h1>
         </div>
       </div>
     </main>

@@ -1,3 +1,7 @@
 export default function NotFound(){
-    return <h1>Page not found!</h1>
+    return(
+        <div className="text-5xl font-bold py-60 text-center">
+            PAGE NOT FOUND!
+        </div>
+    );
 }

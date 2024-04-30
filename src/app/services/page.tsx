@@ -1,6 +1,8 @@
 import Image from "next/image";
 // import image1 from "../../public/image1.jpg"
 
+const services = ["Service1", "Service2", "Service3", "Service4", "Service5"]
+
 export default function Services() {
   return (
     <main>
@@ -23,7 +25,7 @@ export default function Services() {
             </p>
           </div>
           <div className="pl-5 pb-5 rounded-md">
-            <Image src="/image1.jpg" width={600} height={600} alt="Picture 1" />
+            <Image src="/service_image1.webp" width={600} height={600} alt="Picture 1" />
           </div>
         </div>
         <div>

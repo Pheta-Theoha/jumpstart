@@ -1,11 +1,10 @@
 import Image from "next/image";
-// import image1 from "../../public/image1.jpg"
 
 export default function Contact() {
   return (
     <main>
       <div className="contact-header text-white text-shadow-lg outline-4">
-        <h1 className="drop-shadow-[0_3px_3px_rgba(10,10,10,10)] text-6xl pt-40 pl-40">React Out</h1>
+        <h1 className="drop-shadow-[0_3px_3px_rgba(10,10,10,10)] text-6xl text-white pt-40 pl-40">Reach Out</h1>
       </div>
       <div className="columns-2 pt-10 pb-15 pr-5 pl-10 text-justify">
         <div>
@@ -22,8 +21,15 @@ export default function Contact() {
               facilis commodi officiis voluptatem consectetur sunt, eum atque nam porro amet fuga itaque ipsum pariatur illum?
             </p>
           </div>
-          <div className="pl-5 pb-5 rounded-md">
-            <Image src="/image1.jpg" width={600} height={600} alt="Picture 1" />
+          <div className="pb-5 rounded-md">
+            <form method="post" action="/api/form" className="border-2 border-dotted border-black rounded-lg p-3">
+                <input type="text" name="fname" placeholder="First Name" className="text-2xl m-3 rounded-md bg-slate-600 p-1" required/>
+                <input type="text" name="lname" placeholder="Last Name" className="text-2xl m-3 rounded-md bg-slate-600 p-1" required/><br/>
+                <input type="email" name="emmail" placeholder="Email Address" className="text-2xl m-3 rounded-md bg-slate-600 p-1"required />
+                <input type="number" name="phone" placeholder="Phone Number" className="text-2xl m-3 rounded-md bg-slate-600 p-1" required/><br/>
+                <textarea name="inquiry" placeholder="How may we assist you?" cols={40} rows={8} className="text-3xl m-3 rounded-md bg-slate-200 text-black p-2" required/><br/>
+                <input type="submit" value="Submit" className="text-center ml-60 rounded-lg bg-slate-900 text-white px-4 py-2 hover:bg-blue-500 hover:text-black hover:font-bold"/>
+            </form>
           </div>
         </div>
         <div>

@@ -1,3 +1,9 @@
+import { Render } from "./components/Render";
+
 export default function Loading(){
-    return <h1>Loading</h1>
+    return(
+        <div className="loading-spinner">
+            <Render/>
+        </div>
+    );
 }
