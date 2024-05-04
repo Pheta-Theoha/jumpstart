@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="sticky top-0 bg-gradient-to-b from-slate-900 via-slate-700 to-blue-300">
+        <header className="z-50 sticky w-full top-0 bg-gradient-to-b from-slate-900 via-slate-700 to-blue-300">
           <NavBar />
         </header>
         <main className="bg-slate-300 text-black">
